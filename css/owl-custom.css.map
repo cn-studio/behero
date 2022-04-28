@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/owl-custom.scss"
+    ],
+    "names": [],
+    "file": "owl-custom.css"
+}

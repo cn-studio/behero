@@ -1,0 +1,24 @@
+//文字間距
+@mixin font($size) {
+    font-size: $size;
+    line-height: $size*1.5;
+}
+
+//文字呈現限制
+//文字單行顯示
+@mixin text-limted {
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+//文字多行顯示
+@mixin text-limted-rows($rows) {
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $rows;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}

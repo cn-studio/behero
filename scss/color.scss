@@ -1,0 +1,70 @@
+//黑色
+$black:rgb(25, 25, 25);
+
+//灰色
+$gray01: rgb(100, 100, 100);
+
+//灰色
+$gray02: rgb(150, 150, 150);
+
+//灰色
+$gray03: rgb(175, 175, 175);
+
+//灰色
+$gray04: rgb(200, 200, 200);
+
+//灰色
+$gray05:rgb(225, 225, 225);
+
+//灰色
+$gray06: rgb(240, 240, 240);
+
+//白色
+$white:rgb(255, 255, 255);
+
+//主色
+$primary: rgb(46, 91, 170);
+
+//特殊色
+$special: rgb(255, 200, 60);
+
+//Line
+$line: rgb(9, 199, 85);
+
+//副色
+//$secondary: ;
+
+//透明色
+@mixin bg-color-a($color, $opacity){
+    background-color: rgba($color, $opacity);
+}
+
+//淡入效果
+@mixin fadein{
+    visibility: visible;
+    opacity: 1;
+}
+//淡出效果
+@mixin fadeout ($visibility, $opacity){
+    visibility: $visibility;
+    opacity: $opacity;
+}
+
+//立體效果
+@mixin threeD($top, $middle, $down, $bottom){
+    background: linear-gradient(
+        $top 0%,
+        $middle 10%,
+        $down 90%,
+        $bottom 100%,
+    );
+    box-shadow: 0 0 10px $gray;
+}
+
+//漸層效果
+@mixin colors($top, $bottom) {
+    background: linear-gradient(
+        $top 0%,
+        $bottom 100%,
+    )
+}

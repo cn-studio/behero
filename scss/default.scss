@@ -1,0 +1,31 @@
+//IOS 行動裝置背景圖
+@mixin bg-image-ios($ImageName){
+    body::before{
+        content: ' ';
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url('../image/' + $ImageName + '') center 0 no-repeat;
+        background-size: cover;
+    }
+}
+
+//背景
+@mixin bg-image-default($ImageName, $size, $repeat, $position) {
+    background-image: url('../image/' + $ImageName + '');
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+
+//背景不捲動
+@mixin bg-image-fixed($ImageName, $size, $repeat, $position) {
+    background-image: url('../image/' + $ImageName + '');
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+    background-attachment: fixed;
+}

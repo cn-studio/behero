@@ -1,0 +1,73 @@
+//變化速率
+@mixin linear($time) {
+    transition-duration: $time;
+    transition-timing-function: linear;
+}
+
+@mixin ease($time) {
+    transition-duration: $time;
+    transition-timing-function: ease;
+}
+
+@mixin ease-in($time) {
+    transition-duration: $time;
+    transition-timing-function: ease-in;
+}
+
+@mixin ease-out($time) {
+    transition-duration: $time;
+    transition-timing-function: ease-out;
+}
+
+@mixin ease-in-out($time) {
+    transition-duration: $time;
+    transition-timing-function: ease-in-out;
+}
+
+@mixin bezier($time) {
+    transition-duration: $time;
+    transition-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+//動畫
+@mixin animation-linear($name, $delay, $time) {
+    animation-name: $name;
+    animation-delay: $delay;
+    animation-duration: $time;
+    animation-timing-function: linear;
+}
+
+@mixin animation-ease($name, $delay, $time) {
+    animation-name: $name;
+    animation-delay: $delay;
+    animation-duration: $time;
+    animation-timing-function: ease;
+}
+
+@mixin animation-ease-in($name, $delay, $time) {
+    animation-name: $name;
+    animation-delay: $delay;
+    animation-duration: $time;
+    animation-timing-function: ease-in;
+}
+
+@mixin animation-ease-out($name, $delay, $time) {
+    animation-name: $name;
+    animation-delay: $delay;
+    animation-duration: $time;
+    animation-timing-function: ease-out;
+}
+
+@mixin animation-ease-in-out($name, $delay, $time) {
+    animation-name: $name;
+    animation-delay: $delay;
+    animation-duration: $time;
+    animation-timing-function: ease-in-out;
+}
+
+@mixin animation-bezier($name, $delay, $time) {
+    animation-name: $name;
+    animation-delay: $delay;
+    animation-duration: $time;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}

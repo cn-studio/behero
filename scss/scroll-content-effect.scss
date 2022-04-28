@@ -1,0 +1,22 @@
+//基本檔案
+@import 'reset';
+@import 'owl-carousel';
+@import 'layout';
+@import 'color';
+@import 'fonts';
+@import 'animation';
+@import 'default';
+@import 'screen';
+
+//垂直捲動內容淡入淡出
+.scroll{
+    @include linear(0.25s);
+}
+
+.scroll-fadein{
+    @include fadein;
+}
+
+.scroll-fadeout{
+    @include fadeout(hiddne, 0);
+}

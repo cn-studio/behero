@@ -1,0 +1,151 @@
+//內間距-----
+//上方
+@mixin p-t($top) {
+    padding-top: $top;
+}
+//右方
+@mixin p-r($right) {
+    padding-right: $right;
+}
+//下方
+@mixin p-b($bottom) {
+    padding-bottom: $bottom;
+}
+//左方
+@mixin p-l($left) {
+    padding-left: $left;
+}
+//x-軸
+@mixin p-x($pl, $pr) {
+    padding-left:$pl;
+    padding-right:$pr;
+}
+//y-軸
+@mixin p-y($pt, $pb) {
+    padding-top:$pt;
+    padding-bottom:$pb;
+}
+//x & y-軸
+@mixin p-a($py, $px) {
+    padding-top: $py;
+    padding-bottom: $py;
+    padding-left: $px;
+    padding-right: $px;
+}
+//上、右、下、左
+@mixin p($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+
+//外間距-----
+//上方
+@mixin m-t($top) {
+    margin-top: $top;
+}
+//右方
+@mixin m-r($right) {
+    margin-right: $right;
+}
+//下方
+@mixin m-b($bottom) {
+    margin-bottom: $bottom;
+}
+//左方
+@mixin m-l($left) {
+    margin-left: $left;
+}
+//x-軸
+@mixin m-x($ml, $mr) {
+    margin-left:$ml;
+    margin-right:$mr;
+}
+//y-軸
+@mixin m-y($mt, $mb) {
+    margin-top:$mt;
+    margin-bottom:$mb;
+}
+//x & y-軸
+@mixin m-a($my, $mx) {
+    margin-top: $my;
+    margin-bottom: $my;
+    margin-left: $mx;
+    margin-right: $mx;
+}
+//上、右、下、左
+@mixin m($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+
+//定位屬性-----
+//絕對定位
+@mixin absolute($top, $right, $bottom, $left, $margin) {
+    position: absolute;
+    top:$top;
+    left:$left;
+    right:$right;
+    bottom:$bottom;
+    margin: $margin;
+}
+
+//固定定位
+@mixin fixed($top, $right, $bottom, $left, $margin) {
+    position: fixed;
+    top:$top;
+    left:$left;
+    right:$right;
+    bottom:$bottom;
+    margin: $margin;
+}
+
+
+//排版屬性-----
+//橫式
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+//橫式反轉
+@mixin flex-row-r {
+    display: flex;
+    flex-direction: row-reverse;
+}
+//直式
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+//直式反轉
+@mixin flex-col-r {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+//動畫屬性-----
+//旋轉
+@mixin rotate($degree) {
+    transform: rotate($degree)
+}
+
+//縮放
+@mixin scale($n) {
+    transform: scale($n)
+}
+
+//傾斜
+@mixin skew($x, $y) {
+    transform: skew($x, $y)
+}
+
+//位移
+@mixin  translate($x, $y){
+    transform: translate($x, $y);
+}
